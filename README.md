@@ -5,9 +5,9 @@ The files in this repository were used to configure the network depicted below.
 
 https://drive.google.com/file/d/1DhHfZ03S5rZ84T2zWvDa5AFWNzUP-a7x/view?usp=sharing
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible playbook file may be used to install only certain pieces of it, such as Filebeat. All the ansible configuration files and play book files can be found at link below:
 
-https://github.com/zwang126/AzureKibana_SIEM/blob/main/Ansible/filebeat-config.yml
+https://github.com/zwang126/AzureKibana_SIEM/tree/main/Ansible
 
 This document contains the following details:
 - Description of the Topology
@@ -58,7 +58,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-box-provisioner and Red-ELK-Srv1 machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
-96.2xx.2xx.221 （my public IP)![ELK](https://user-images.githubusercontent.com/10135553/131216380-607302e8-27ba-4c01-95d5-4964f90c73cc.PNG)
+96.2xx.2xx.221 （my public IP)!
 
 
 
@@ -96,7 +96,7 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 
-![Uploading ELK.PNG…]()
+[ELK](https://user-images.githubusercontent.com/10135553/131216380-607302e8-27ba-4c01-95d5-4964f90c73cc.PNG)
 
 
 ### Target Machines & Beats
