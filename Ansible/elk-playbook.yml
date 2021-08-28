@@ -7,38 +7,38 @@
 
 
     - name: Increase virtual memory
-      command: sysctl -w vm.max_map_count=262144
+      command: sysctl -w vm.max_map_count=262144 #set system memory resource to max262144 to boot kibana
 
     - ansible.posix.sysctl:
         name: vm.max_map_count
         value: 262144
         state: present
-        reload: yes
+        reload: yes #set system memory resource to max262144 to boot kibana
 
 
     - name: Install docker.io
       apt:
         update_cache: yes
         name: docker.io
-        state: present
+        state: present # install docker.io
 
     - name: Install python3-pip
       apt:
-        name: python3-pip
-        state: present
+        name: python3-pip 
+        state: present # install python3-pip ignore if already installed
 
     - name: Install docker
       pip:
         name: docker
-        state: present
+        state: present # install docker ignore if already installed
 
     - name: Create first Container
       docker_container:
         name: elk
-        image: sebp/elk:761
+        image: sebp/elk:761 # docker image name
         state: started
-        restart_policy: always
-        published_ports:
+        restart_policy: always # define restart policy
+        published_ports: # define port mapping
           - 5601:5601
           - 9200:9200
           - 5044:5044

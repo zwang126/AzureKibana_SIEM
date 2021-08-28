@@ -6,12 +6,12 @@
     tasks:
 
     - name: download filebeat deb
-      command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb
+      command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.4.0-amd64.deb # download filebeat package on target machine
 
     - name: install filebeat deb
-      command: dpkg -i filebeat-7.4.0-amd64.deb
+      command: dpkg -i filebeat-7.4.0-amd64.deb # install package
 
-    - name: drop in filebeat.yml
+    - name: drop in filebeat.yml #copy config file from ansible machine to tart machine's directory
       copy:
         src: /etc/ansible/filebeat-config.yml
         dest: /etc/filebeat/filebeat.yml
