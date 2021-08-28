@@ -46,7 +46,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump-box-provisioner 	| Jump box, Ansiable provisioner                 | 10.0.0.4   	| Ubuntu 18.04-LTS 	|
 | Red-VM-Web1          	| Web Server, hosting DVWA docker Instance       | 10.0.0.5   	| Ubuntu 18.04-LTS 	|
 | Red-VM-Web2          	| Web Server, hosting DVWA docker Instance       | 10.0.0.6   	| Ubuntu 18.04-LTS 	|
-| Red-ELK-Srv1          | ELK stack server, hosting ELK docker Instance  | 10.1.0.4   	| Ubuntu 18.04-LTS  	|
+| ELK-VM                | ELK stack server, hosting ELK docker Instance  | 10.1.0.4   	| Ubuntu 18.04-LTS  	|
 
 
 
@@ -55,7 +55,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-box-provisioner and Red-ELK-Srv1 machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump-box-provisioner and ELK-VM machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
 96.2xx.2xx.221 （my public IP)!
@@ -77,7 +77,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump-Box-provisioner 	| No                  	| 96.2xx.2xx.221 (My public IP)                     	|
 | Red-VM-Web1          	| No                  	| 96.2xx.2xx.221 (My public IP), 10.0.0.4, 10.1.0.4 	|
 | Red-VM-Web2          	| No                  	| 96.2xx.2xx.221 (My public IP), 10.0.0.4, 10.1.0.4 	|
-| Red-ELK-Srv1         	| No                  	| 96.2xx.2xx.221 (My public IP), 10.0.0.4           	|
+| ELK-VM         	| No                  	| 96.2xx.2xx.221 (My public IP), 10.0.0.4           	|
 
 ### Elk Configuration
 
