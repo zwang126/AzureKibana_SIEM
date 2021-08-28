@@ -1,9 +1,9 @@
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-![Topology](https://user-images.githubusercontent.com/10135553/131216215-8ec814e7-f343-446a-a3d9-5c5b7cb55bd6.PNG)
 
-https://drive.google.com/file/d/1DhHfZ03S5rZ84T2zWvDa5AFWNzUP-a7x/view?usp=sharing
+![AzureELK_Topology](https://user-images.githubusercontent.com/10135553/131216586-7fd26abc-14a0-4822-b764-d2873642d91f.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible playbook file may be used to install only certain pieces of it, such as Filebeat. All the ansible configuration files and play book files can be found at link below:
 
@@ -121,9 +121,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the configuration file to Red-VM-WEB1 AND Red-VM-WEB2.
+- Update the host file to include ELK server and Red-VM-Web1, Red-VM-WEB2
+- Run the playbook, and navigate to Kibana webiste to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
