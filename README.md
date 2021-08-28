@@ -139,3 +139,5 @@ _TODO: Answer the following questions to fill in the blanks:_
    http://104.42.232.28:5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+Using git command to clone this directory ( git clone https://github.com/zwang126/AzureKibana_SIEM.git), modify the IP addresses and machine name to fit your needs in ansible host file, configuration file and play book file. 
